@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url('media/hero_image.jpg');
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+.main .box{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+}
+nav{
+    display: flex;
+    max-width: 95vw;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    height: 62px;
+    margin-left: 20px;
+}
+nav img{
+    color: red;
+    width: 160px;
+    position: relative;
+    z-index: 30;
+    margin-top: 5vh;
+    margin-left: 0.6vw;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+    background-color: red;
+    color: white;
+    width: 6vw;
+    height: 5vh;
+    border: 8px solid red;
+    border-radius: 5px;
+    margin-top: 7vh;
+    margin-left: 3.5vh;
+    text-align: center;
+}
+nav select{
+    position: relative;
+    z-index: 10;
+    color: white;
+    background-color: transparent;
+    width: 8vw;
+    height: 5vh;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 3vh;
+}
+.hero{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    gap: 25px;
+}
+.hero> :nth-child(1){
+    margin-top: 170px;
+    font-weight: 1000;
+    font-size: 48px;  
+    text-align: center;
+}
+.hero> :nth-child(2){
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+}
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+.hero button{
+    width: 16vw;
+    height: 8vh;
+    color: white;
+    background-color: rgb(255,0,0);
+    border: 2px solid red;
+    font-size: 25px;
+    border-radius: 5px;
+    padding: 3px 20px;
+}
+.hero input{
+    width: 30vw;
+    height: 8vh;
+    color: white;
+    border: 1px solid white;
+    background-color: rgba(23,23,23,0.2);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 4px 10px 0px 10px;
+}
+.separation{
+    background-color: rgb(68, 66, 66);
+    height: 7px;
+}
+.section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90vw;
+    min-height: 80vh;
+    color: white;
+    margin: auto;
+    margin-top: 50px;
+}
+.sec2img{
+    position: relative;
+}
+.sec2img img{
+    width: 40vw;
+}
+.general{
+    position: absolute;
+    top: 68px;
+    right: 58px;
+    width: 30vw;
+    z-index: -10;
+}
+.section2 h2{
+    font-size: 48px;
+}
+.section2 p{
+    font-size: 26px;
+}
+.rajma_chawal{
+    position: absolute;
+    top: 43px;
+    right: 90px;
+    width: 25vw;
+    z-index: -10;
+}
+.section2-qna{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90vw;
+    min-height: 150vh;
+    color: white;
+    margin: auto;
+    margin-top: 50px;
+    gap: 10px;
+}
+.section2-qna h2{
+    font-size: 48px;
+}
+.question-box{
+    transition: all 0.25s ease-out;
+    width: 90vw;
+    height: 13vh;
+    background-color: rgb(52, 50, 50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.question-box:hover{
+    background-color: rgb(74, 71, 71);
+}
+.question{
+    font-size: 24px;
+    width: 80vw;
+}
+.icon{
+   font-size: 3rem;
+}
+.section2-qna button{
+    width: 16vw;
+    height: 8vh;
+    color: white;
+    background-color: rgb(255,0,0);
+    border: 2px solid red;
+    font-size: 25px;
+    border-radius: 5px;
+    padding: 3px 20px;
+}
+.section2-qna input{
+    width: 30vw;
+    height: 8vh;
+    color: white;
+    border: 1px solid white;
+    background-color: rgba(23,23,23,0.2);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 4px 10px 0px 10px;
+    margin-right: 5px;
+}
+.footpanel{
+    background-color: black;
+    color: white;
+    height: 30vh;
+    display: flex;
+    text-decoration: underline;
+    justify-content: left;
+}
+ul{
+    margin-top: 30px;
+    margin-right: 28vh;
+    font-size: 18px;
+}
+ul a{
+    color: #dddddd;
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 16px;
+}
+footer select{
+    font-size: 18px;
+    background-color: rgba(45, 44, 44, 0.2);
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-left: 63px ;
+    margin-top: 20px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rock, Paper and Scissors Game</h1>
+    <button onclick="
+    console.log('You have chosen Rock');
+    let randomNumber=Math.random()*3;
+    if(randomNumber>0 && randomNumber<=1){
+        var computerChoice='Rock';
+        console.log('Computer have chosen Rock');
+    }
+    else if(randomNumber>1 && randomNumber<=2){
+        var computerChoice='Paper';
+        console.log('Computer have chosen Paper')
+    }
+    else{
+        var computerChoice='Scissors';
+        console.log('Computer have chosen Scissors');
+    }
+    var result;
+    if(computerChoice==='Rock'){result='You and Computer have a tie';}
+    if(computerChoice==='Paper'){result='Computer won';}
+    if(computerChoice==='Scissors'){result='User won';}
+
+    alert(`You chose Rock. Computer chose ${computerChoice}. ${result}.`);
+    ">Rock</button>
+
+    <button onclick="
+    console.log('You have chosen Paper');
+    let randomNumber2=Math.random()*3;
+    if(randomNumber2>0 && randomNumber2<=1){
+        var computerChoice='Rock';
+        console.log('Computer have chosen Rock');
+    }
+    else if(randomNumber2>1 && randomNumber2<=2){
+        var computerChoice='Paper';
+        console.log('Computer have chosen Paper')
+    }
+    else{
+        var computerChoice='Scissors';
+        console.log('Computer have chosen Scissors');
+    }
+    var result;
+    if(computerChoice==='Rock'){result='User won';}
+    if(computerChoice==='Paper'){result='You and Computer have a tie';}
+    if(computerChoice==='Scissors'){result='Computer won';}
+
+    alert(`You chose Paper. Computer chose ${computerChoice}. ${result}.`);
+    ">Paper</button>
+
+    <button onclick="
+    console.log('You have chosen Scissors');
+    let randomNumber3=Math.random()*3;
+    if(randomNumber3>0 && randomNumber3<=1){
+        var computerChoice='Rock';
+        console.log('Computer have chosen Rock');
+    }
+    else if(randomNumber3>1 && randomNumber3<=2){
+        var computerChoice='Paper';
+        console.log('Computer have chosen Paper')
+    }
+    else{
+        var computerChoice='Scissors';
+        console.log('Computer have chosen Scissors');
+    }
+    var result;
+    if(computerChoice==='Rock'){result='Computer won';}
+    if(computerChoice==='Paper'){result='User won';}
+    if(computerChoice==='Scissors'){result='You and Computer have a tie';}
+
+    alert(`You chose Scissors. Computer chose ${computerChoice}. ${result}.`);
+    ">Scissors</button>
+</body>
+</html>
