@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Resume Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+        <nav class = "navbar bg-white">
+            <div class="container">
+                <div class = "navbar-content">
+                    <div class = "brand-and-toggler">
+                        <a href = "index.html" class = "navbar-brand">
+                            <img src = "images/curriculum-vitae.png" alt = "" class = "navbar-brand-icon">
+                            <span class = "navbar-brand-text">build <span>resume.</span>
+                        </a>
+                        <button type = "button" class = "navbar-toggler-btn">
+                            <div class = "bars">
+                                <div class = "bar"></div>
+                                <div class = "bar"></div>
+                                <div class = "bar"></div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="cv-form">
+            <div class="resume-input">
+            
+                <div class="heading">ABOUT SECTION</div>
+                <div class="line">
+                    <div class="box">
+                        <h5>Name</h5>
+                        <input id="nameIn" type="text">
+                    </div>
+                    <div class="box">
+                        <h5>Objective</h5>
+                        <input id="objIn" type="text">
+                    </div>
+                    <div class="box">
+                        <h5>Phone Number</h5>
+                        <input id="numIn" type="text">
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="box">
+                        <h5>Email Id</h5>
+                        <input id="emailIn" type="email" placeholder="eg. john@gmail.com">
+                    </div>
+                    <div class="box">
+                        <h5>LinkedIn URL</h5>
+                        <input id="linkIn" type="text">
+                    </div>
+                    <div class="box">
+                        <h5>Your Photo</h5>
+                        <input id="imgField" type="file">
+                    </div>
+                </div>
+                <div class="heading">EDUCATION</div>
+                    <div class="edu-sec">
+                        <div class="line">
+                             <input class="description" id="eduField1" type="text" placeholder="(Mention passing year, degree, University and cgpa obtained.)">
+                        </div>
+                        <hr>
+                        <div class="line">
+                            <input class="description" id="eduField2" type="text" placeholder="(Mention passing year, degree, University and cgpa obtained.)">
+                       </div>
+                        <hr>
+                        <div class="line">
+                            <input class="description" id="eduField3" type="text" placeholder="(Mention passing year, degree, University and cgpa obtained.)">
+                       </div>
+                    </div>
+                    <div class="heading">SKILLS AND PROFICIENCIES</div>
+                    <div class="skill-sec">
+                        <div class="line">
+                            <input class="description" id="skillField1" type="text" placeholder="(mention your skill amd briefly decribe how profcient you are.)">
+                        </div>
+                        <hr>
+                        <div class="line">
+                            <input class="description" id="skillField2" type="text" placeholder="(mention your skill amd briefly decribe how profcient you are.)">
+                        </div>
+                        <hr>
+                        <div class="line">
+                            <input class="description" id="skillField3" type="text" placeholder="(mention your skill amd briefly decribe how profcient you are.)">
+                        </div>
+                    </div>
+                    <div class="heading">AWARDS AND RECOGNITION</div>
+                    <div class="award-sec">
+                        <div class="line">
+                            <input class="description" id="awardField1" type="text" placeholder="(mention title of the award and a breif description.)">
+                        </div>
+                        <hr>
+                        <div class="line">
+                            <input class="description" id="awardField2" type="text" placeholder="(mention title of the award and a breif description.)">
+                        </div>
+                    </div>
+                    <div class="heading">INTERESTS AND ACTIVITIES</div>
+                    <div class="interest-sec">
+                        <div class="line">
+                            <input class="description" id="interestField1" type="text" placeholder="(mention your activities/interests with a breif description.)">
+                        </div>
+                        <hr>
+                        <div class="line">
+                            <input class="description" id="interestField2" type="text" placeholder="(mention your activities/interests with a breif description.)">
+                        </div>
+                    </div>
+                    <div class="heading">WORK EXPERIENCE</div>
+                    <div class="work-sec">
+                        <div class="line">
+                            <input class="description" id="workField1" type="text" placeholder="(mention company name, designation and time period.)">
+                        </div>
+                        <hr>
+                        <div class="line">
+                            <input class="description" id="workField2" type="text" placeholder="(mention company name, designation and time period.)">
+                        </div>
+                        <hr>
+                        <div class="line">
+                            <input class="description" id="workField3" type="text" placeholder="(mention company name, designation and time period.)">
+                        </div>
+                    </div>
+                    <div class="heading">REFERENCES</div>
+                    <div class="ref-sec">
+                        <div class="line">
+                            <input class="description" id="refField1" type="text" placeholder="(mention name, designation and contact details of your references.)">
+                        </div>
+                        <hr>
+                        <div class="line">
+                            <input class="description" id="refField2" type="text" placeholder="(mention name, designation and contact details of your references.)">
+                        </div>
+                    </div>
+                </div>
+        <div class="button">
+            <button onclick="generateCV(); " class="btn btn-primary btn-resume">CREATE MY RESUME</button>
+        </div>
+        </div>
+        <div id="cv-template">
+            <div class="resume-input2">
+                <div class="col1">
+                    <div class="photo">
+                    <img src="images/curriculum-vitae.png" id="photoT">
+                    </div>
+                    <br>
+                    <div class="contact">
+                        <h4 style="font-size: 20px;">Contact</h4>
+                        <hr>
+                        <h5 style="font-size: 17px;">Mobile No.</h5>
+                        <p id="phoneT"></p>
+                        <h5 style="font-size: 17px;">Email-Id</h5>
+                        <p style="cursor: pointer;" id="emailT"></p>
+                        <h5 style="font-size: 17px;">LinkedIn Profile</h5>
+                        <a href="#" id="LinkedT"></a>
+                    </div>
+                    <br>
+                    <div class="edu">
+                        <h4 style="font-size: 20px;">Education</h4>
+                        <hr>
+                        <ul>
+                            <li id="eduT1"></li>
+                            <li id="eduT2"></li>
+                            <li id="eduT3"></li>
+                        </ul>
+                        <br>
+                    </div>
+                    <div class="skills">
+                        <h4 style="font-size: 20px;">Skills and Profieciencies</h4>
+                        <hr>
+                        <ul>
+                            <li id="skillT1"></li>
+                            <li id="skillT2"></li>
+                            <li id="skillT3"></li>
+                        </ul>
+                        <br>
+                    </div>
+                    <div class="acti">
+                        <h4 style="font-size: 20px;">Interests and Activities</h4>
+                        <hr>
+                        <ul>
+                            <li id="actiT1"></li>
+                            <li id="actiT2"></li>
+                        </ul>
+                        <br>
+                    </div>
+                </div>
+                <div class="col2">
+                    <div id="nameT" style="font-size: 22px; color: #222f3d; font-weight: 700;"></div>
+                    <div id="objT"></div>
+                    <br>
+                    <div class="awards">
+                        <h4 style="font-size: 20px; color: #222f3d;">Awards and Recognition</h4>
+                        <hr>
+                        <ul>
+                            <li id="awardT1"></li>
+                            <li id="awardT2"></li>
+                        </ul>
+                        <br>
+                    </div>
+                    <div class="work">
+                        <h4 style="font-size: 20px; color: #222f3d;">Work Experience</h4>
+                        <hr>
+                        <ul>
+                            <li id="workT1"></li>
+                            <li id="workT2"></li>
+                            <li id="workT3"></li>
+                        </ul>
+                        <br>
+                    </div>
+                    <div class="ref">
+                        <h4 style="font-size: 20px; color: #222f3d;">References</h4>
+                        <hr>
+                        <ul class="refT">
+                            <li id="refT1"></li>
+                            <li id="refT2"></li>
+                        </ul>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <button onclick="printMyResume();" class="btn btn-primary btn-resume">PRINT MY RESUME</button>
+            </div>
+        </div>
+        <footer class = "footer bg-dark">
+            <div class="container">
+                <div class = "footer-content text-center">
+                    <p class="fs-15">&copy;Copyright 2022. All Rights Reserved - <span>build.resume</span></p>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="js/scripts.js"></script>
+    </body>
+    </html>
